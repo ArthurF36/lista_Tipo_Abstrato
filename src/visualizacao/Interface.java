@@ -21,31 +21,24 @@ public class Interface {
                 System.out.print("Informe um número inteiro para inseção: ");
                 num = in.nextInt();
                 pilha.Push(num);
-            }
-            else if (op == '2') {
+            } else if (op == '2') {
                 if (pilha.isEmpty()) {
                     System.out.println("Pilha vazia.");
-                }
-                else {
+                } else {
                     remove = pilha.Pop();
                     System.out.println("O número " + remove + " foi removido do topo da lista.");
                 }
-            }
-            else if (op == '3') {
+            } else if (op == '3') {
                 pilha.show();
-            }
-            else if (op == '4') {
+            } else if (op == '4') {
                 System.out.print("Informe um número inteiro para remoção: ");
                 num = in.nextInt();
                 pilha.Cancel(num);
-            }
-            else if (op == '5') {
+            } else if (op == '5') {
                 menuPilha();
-            }
-            else if (op == '0') {
+            } else if (op == '0') {
                 System.out.println("Fim do programa.");
-            }
-            else {
+            } else {
                 System.out.println("Opção inválida.");
             }
             System.out.println();
